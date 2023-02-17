@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>F8_Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+
+<body>
+  <div class="container">
+    <div id="js-header" class=" header">
+      <!-- begin nav -->
+      <ul class="nav">
+        <li><a href="#">Home</a></li>
+        <li><a href="#band">Band</a></li>
+        <li><a href="#tour">Tour</a></li>
+        <li><a href="#contact">Contact</a></li>
+
+        <li>
+          <a href="">
+            More
+            <i class="fa-sharp fa-solid fa-caret-down"></i>
+          </a>
+          <ul class="subnav">
+            <li><a href="#">Merchandise</a></li>
+            <li><a href="#">Extras</a></li>
+            <li><a href="#">Media</a></li>
+          </ul>
+        </li>
+
+      </ul>
+
+      <!-- end nav -->
+
+      <!-- begin search -->
+      <div class="search-btn">
+        <i class="search-icon fa-solid fa-magnifying-glass"></i>
+      </div>
+  
+      <div id= "js-menubar" class=" menu-mobile">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!-- end search -->
+    </div>
+
+    <!-- end header -->
+
+    <!-- begin slider -->
+    <div class="slider">
+      <div class="text-slider">
+        <h2 class="text-header"> Chicago</h2>
+        <p class="text-descriptsion">Thank you, Chicago - A night we won't forget.</p>
+
+      </div>
+
+    </div>
+
+    <!-- end slider -->
+
+    <!-- begin content -->
+    <div class="content">
+
+      <!-- begin band -->
+
+      <div id="band" class="section-content">
+        <h2 class="section-header">THE BAND</h2>
+        <p class="section-sub-header">We love music</p>
+        <p class="band-text">We have created a fictional band website. Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+          quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
+          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+          cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing
+          elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+          exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+        <div class="member-border">
+
+          <div class="member">
+            <div class="member-name">name</div>
+            <img src="/assets/bandmember.jpg" alt="" class="member-img">
+          </div>
+
+          <div class="member">
+            <div class="member-name">name</div>
+            <img src="/assets/bandmember.jpg" alt="" class="member-img">
+          </div>
+
+          <div class="member">
+            <div class="member-name">name</div>
+            <img src="/assets/bandmember.jpg" alt="" class="member-img">
+          </div>
+
+          <div class="clear"></div>
+
+        </div>
+
+
+      </div>
+      <!-- end band -->
+
+      <!-- begin tour -->
+
+
+      <div id="tour" class="tour">
+        <div class="section-content">
+          <h2 class="color-text section-header">TOUR DATES</h2>
+          <p class="color-text section-sub-header">Remember to book your tickets!</p>
+
+          <ul class="ticker-list">
+            <li>September <span class="sold-ticker">Sold out</span></li>
+            <li>October <span class="sold-ticker">Sold out</span></li>
+            <li>November<span class="ticker-quantity">3</span></li>
+          </ul>
+
+          <div class="place-list">
+
+            <div class="place-content">
+              <img src="/assets/newyork.jpg" alt="" class="place-image">
+              <div class="place-text">
+                <h3 class="place-header">New York</h3>
+                <p class="place-day">Fri 27 Nov 2016</p>
+                <p class="place-details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="place-btn js-modal-ticket">Buy Tickets</button>
+              </div>
+
+            </div>
+
+            <div class="place-content">
+              <img src="/assets/paris.jpg" alt="" class="place-image">
+              <div class="place-text">
+                <h3 class="place-header">Paris</h3>
+                <p class="place-day">Sat 28 Nov 2016</p>
+                <p class="place-details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="place-btn js-modal-ticket">Buy Tickets</button>
+              </div>
+
+            </div>
+
+            <div class="place-content">
+              <img src="/assets/sanfran.jpg" alt="" class="place-image">
+              <div class="place-text">
+                <h3 class="place-header">San Francisco</h3>
+                <p class="place-day">Sun 29 Nov 2016</p>
+                <p class="place-details">Praesent tincidunt sed tellus ut rutrum sed vitae justo.</p>
+                <button class="place-btn js-modal-ticket">Buy Tickets</button>
+              </div>
+
+            </div>
+
+            <div class="clear"></div>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+
+      <!--begin modal -->
+      <div class="modal-container js-modal ">
+
+        <div class="modal-ticker js-modal-container ">
+          <div class="icon-close js-close-modal"> <i class="fa-solid fa-xmark"></i></div>
+
+          <div class="header-modal">
+
+            <i class="icon-header fa-solid fa-suitcase"></i>
+            Tickets
+          </div>
+
+          <div class="body-modal">
+
+
+            <label for="" class="modal-label">
+              <i class="icon-label fa-solid fa-cart-shopping"></i>
+              Tickets, $15 per person
+            </label>
+            <input type="text" class="modal-input" placeholder="How many ?">
+            <label for="" class="modal-label">
+              <i class="icon-label fa-solid fa-user"></i>
+              Send To
+            </label>
+            <input type="email" class="modal-input" placeholder="Enter email">
+
+            <button class="modal-button">Pay
+              <i class="icon-check fa-solid fa-check"></i></button>
+
+          </div>
+
+          <div class="footer-modal">Need <a href="" class="help-modal"> help?</a></div>
+
+        </div>
+
+      </div>
+
+      <!-- end modal -->
+
+      <!-- end tour -->
+
+      <!-- begin contact -->
+      <div id="contact" class="contact-container">
+      <div class="section-content">
+        <h2 class="section-header">CONTACT</h2>
+        <p class="section-sub-header">Fan? Drop a note!</p>
+        
+        <div class="row contact-content">
+         <div class="col col-haft contact-info">
+            <p class="method-contact"><i class="icon-info fa-solid fa-location-dot"> </i>  Chicago, U</p>
+            <p class="method-contact"><i class="icon-info fa-solid fa-phone"></i> Phone: +00 151515</p>
+            <p class="method-contact"><i class="icon-info fa-solid fa-envelope"></i> Email: mail@mail.com</p>
+         </div>
+
+         <form action="" >
+         <div class="col col-haft contact-report">
+          
+             <div class="row">
+
+              <div class="col col-haft" > <input type="text" placeholder="Name"  required id="" class="contact-form"> </div>
+
+              <div class="col col-haft" ><input type="email" placeholder="Email"  required id="" class="contact-form"></div>
+              
+               <div  class="col col-full mt-8" ><input type="text" placeholder="message"  required  id="" class="contact-form"></div>
+              
+              
+              
+             </div>
+              
+              
+         </div>
+        
+         <div class="col mt-16 btn-contact">
+           <input type="submit"  value="Send" class="btn-detail">
+          </div>
+        </div>
+      </form>
+       
+
+      </div>
+
+    </div>
+    
+      <!-- end contact -->
+
+      <!-- begin image -->
+        <div >
+           <img class="img-full" src="/assets/map.jpg" alt="">
+        </div>
+      <!-- begin image -->
+
+
+    </div>
+
+   <!-- end content -->
+   
+
+   <div class="footer">
+      <div class="icon-footer">
+        <p class="icon-social"><i class="fa-brands fa-facebook"></i></p>
+        <p class="icon-social"><i class="fa-brands fa-instagram"></i></p>
+        <p class="icon-social"><i class="fa-solid fa-bell"></i></p>
+        <p class="icon-social"><i class="fa-brands fa-pinterest"></i></p>
+        <p class="icon-social"><i class="fa-brands fa-twitter"></i></p>
+        <p class="icon-social"><i class="fa-brands fa-linkedin"></i></p>
+      </div>
+
+      <div class="text-footer">
+        <p>Powered by <a href="#">w3.css</a></p>
+      </div>
+
+   </div>
+ 
+
+    
+
+
+
+
+  </div>
+
+ 
+
+
+ 
+
+
+  <script src="javacript.js"></script>
+</body>
+
+</html>
